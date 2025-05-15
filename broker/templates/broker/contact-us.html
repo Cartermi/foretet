@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+{% load static %}
+{%  block content %}
+<html lang="en" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Contact Us | Forex Trade</title>
+    <link rel="shortcut icon" href="{% static 'imagesfavicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/apps8a548a54.css' %}">
+	<!-- System Build v20210628110 @iO -->
+</head>
+<body class="nk-body npc-cryptlite bg-white">
+<div class="nk-app-root">
+    <div class="nk-main">
+        <header class="header bg-gray-900">
+            <div class="header-main header-dark bg-gray-900 on-dark is-sticky is-transparent">
+                <div class="container header-container wide-lg">
+                    <div class="header-wrap">
+                        <img src="{% static 'images/maillertag1678629.png' %}" width="150px" alt="Forex Trade">
+
+
+                        <div class="header-toggle">
+                            <button class="menu-toggler" data-target="main-hmenu">
+                                <em class="menu-on icon ni ni-menu"></em>
+                                <em class="menu-off icon ni ni-cross"></em>
+                            </button>
+                        </div>
+
+                        <nav class="header-menu"  data-content="main-hmenu">
+                            <ul class="menu-list ml-lg-auto">
+                                                                <li class="menu-item"><a href="{% url 'index' %}" class="menu-link nav-link">Home</a></li>
+                                                                                                <li class="menu-item"><a href="{% url 'investments' %}" class="menu-link nav-link">Investment</a></li>
+                                                                <li class="menu-item">
+		    <a href="{% url 'dashboard' %}" class="menu-link nav-link" target="_blank">
+		        <span class="menu-text">Return to Homepage</span>
+		    </a>
+		</li>
+								<li class="menu-item active">
+		    <a href="{% url 'contact' %}" class="menu-link nav-link">
+		        <span class="menu-text">Contact</span>
+		    </a>
+		</li>
+					
+		
+	
+
+
+                                                                <li class="menu-item"><a href="{% url 'register' %}" class="menu-link nav-link">Register</a></li>
+                                                            </ul>
+
+                                                        <ul class="menu-btns">
+                                <li>
+                                    <a href="{% url 'login' %}" class="btn btn-round btn-primary"><em class="icon ni ni-user-alt"></em> <span>Login</span></a>
+                                </li>
+                            </ul>
+                                                    </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="nk-page-content bg-lighter">
+                        <section class="section section-lg section-page">
+                <div class="container wide-lg">
+                    <div class="content-page">
+    <div class="nk-block-head nk-block-head-lg text-center wide-xs mx-auto">
+        <div class="nk-block-head-content">
+            <h2 class="nk-block-title">Contact Us</h2>
+                    </div>
+    </div>
+
+    <div class="nk-block card card-bordered card-stretch">
+        <div class="card-inner card-inner-lg">
+            <article class="entry">
+                <h4>Get In Touch</h4>
+<p>If you need advice or have any question in mind or technical assistance, do not hesitate to contact our specialists.</p>
+<p><strong>Email Address:</strong> service.fxspace@gmail.com</p>
+            </article>
+
+
+    <form method="POST" action="#">
+    <h4>Support Form</h4>
+    <p>Contact us using the contact form and we will respond immediately.</p>
+    <div class="row g-3">
+                <div class="col-12">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name <span class="text-danger">*</span></label>
+                <div class="form-control-wrap">
+                    <input type="text" class="form-control form-control-lg " name="name" id="name" value="">
+                                        
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                <div class="form-control-wrap">
+                    <input type="email" class="form-control form-control-lg " name="email" id="email" value="" required>
+                                        
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <div class="form-control-wrap">
+                     <input type="text" class="form-control form-control-lg " name="phone" id="phone" value="">
+                                        
+                </div>
+            </div>
+        </div>
+                <div class="col-12">
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                <div class="form-control-wrap">
+                    <input type="text" class="form-control form-control-lg " name="subject" id="subject" value="" required>
+                                    </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                <div class="form-control-wrap">
+                    <textarea name="message" class="form-control " id="message" placeholder="Enter your message here..." required></textarea>
+                                    </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group mt-1">
+            <button name='submit' type='submit' class="btn btn-primary btn-lg btn-mw ">
+                    <span class="spinner-border spinner-border-sm hide" role="status" aria-hidden="true"></span>
+                    <span>Submit</span>
+                </button>
+            </div>
+        </div>  
+    </div>
+</form>                    </div>
+    </div>
+</div>
+                </div>
+            </section>
+                    </div>
+
+        <footer class="section footer bg-white border-top" id="footer">
+    <div class="container wide-lg">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-content text-center">
+                    
+
+                    <div class="text-base">Forex Trade &copy; 2023. All Rights Reserved.</div>
+
+                    <ul class="nav nav-sm justify-content-center py-3">
+	
+						<li class="nav-item">
+			<a class="nav-link" href="{% url 'dashboard' %}" target="_blank">Return to Homepage</a>
+		</li>
+								<li class="nav-item">
+			<a class="nav-link" href="{% url 'privacy-policy' %}">Privacy Policy</a>
+		</li>
+				
+		
+
+		</ul>
+		
+	
+
+
+                                    </div>
+            </div>
+        </div>
+    </div>
+</footer>    </div>
+</div>
+<script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","flag_style":"3d"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+<script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=EBqZhysujYxw"></script>
+
+<script src="{% static 'js/bundle.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+</body>
+{%  endblock content %}
+</html>

@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+{% load static %}
+{%  block content %}
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency and Forex Investment Platform | Forex Trade</title>
+    <meta name="image" property="og:image" content="assets/img/new_3.jpg">
+    <meta name="twitter:image" content="assets/img/new_3.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/theme-skin-color-set2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/intlTelInput.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fake-notification-min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'js/jquery.bxslider.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <style>
+        .line-bottom {
+          position: relative;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+        }
+        .line-bottom:after {
+          bottom: -1px;
+          content: "";
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 50px;
+        }
+        .line-bottom-theme-colored2 {
+          position: relative;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+        }
+        .line-bottom-theme-colored2:after {
+          border-radius: 10px;
+          bottom: -1px;
+          content: "";
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 50px;
+        }
+        .line-bottom-rounded-theme-colored2 {
+          position: relative;
+          margin-bottom: 12px;
+          padding-bottom: 4px;
+        }
+        .line-bottom-rounded-theme-colored2:after {
+          border-radius: 15px;
+          bottom: -1px;
+          content: "";
+          height: 4px;
+          border-radius: 6px;
+          left: 0;
+          position: absolute;
+          width: 42px;
+        }
+        .double-line-bottom-theme-colored2 {
+          margin-bottom: 20px;
+          margin-top: 8px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .double-line-bottom-theme-colored2:after {
+          border-radius: 8px;
+          bottom: 1px;
+          content: "";
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 64px;
+        }
+        .double-line-bottom-theme-colored2:before {
+          border-radius: 8px;
+          bottom: -1px;
+          content: "";
+          height: 6px;
+          left: 10px;
+          position: absolute;
+          width: 24px;
+        }
+        .diamond-line-centered-theme-colored2 {
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .diamond-line-centered-theme-colored2:after {
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 90px;
+        }
+        .diamond-line-centered-theme-colored2:before {
+          border: 3px solid #fff;
+          bottom: -5px;
+          content: "";
+          height: 14px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 14px;
+          z-index: 3;
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .diamond-line-centered-theme-white {
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .diamond-line-centered-theme-white:after {
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 90px;
+          background-color: #fff;
+        }
+        .diamond-line-centered-theme-white:before {
+          background-color: #fff;
+          border: 3px solid #fff;
+          bottom: -5px;
+          content: "";
+          height: 14px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 14px;
+          z-index: 3;
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .diamond-line-left-theme-colored2 {
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .diamond-line-left-theme-colored2:after {
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          width: 90px;
+        }
+        .diamond-line-left-theme-colored2:before {
+          border: 3px solid #fff;
+          bottom: -5px;
+          content: "";
+          height: 14px;
+          left: 15px;
+          position: absolute;
+          right: 0;
+          width: 14px;
+          z-index: 3;
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .line-bottom-centered {
+          position: relative;
+          margin: 10px 0 35px;
+        }
+        .line-bottom-centered:after {
+          bottom: -13px;
+          content: "";
+          height: 3px;
+          left: 0;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0;
+          position: absolute;
+          right: 0;
+          width: 40px;
+        }
+        .line-bottom-double-line-centered {
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          position: relative;
+        }
+        .line-bottom-double-line-centered::before {
+          bottom: 3px;
+          content: "";
+          height: 1px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 20px;
+        }
+        .line-bottom-double-line-centered::after {
+          bottom: 7px;
+          content: "";
+          height: 1px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 45px;
+        }
+        .cryptonatorwidget {
+          border: none !important;
+          padding: 0 !important;
+        }
+        .cryptonatorwidget input,
+        .cryptonatorwidget select {
+          font-size: 14px !important;
+          text-transform: uppercase;
+          height: 50px !important;
+          padding-left: 10px;
+          border-radius: 16px;
+        }
+        @media (max-width: 499px) {
+          .cryptonatorwidget input,
+          .cryptonatorwidget select {
+            padding-left: 10px;
+          }
+        }
+        .cryptonatorwidget select {
+          padding-right: 40px;
+        }
+        .cryptonatorwidget .select-group {
+          margin-bottom: 0;
+        }
+        .cryptonatorwidget > div:last-child {
+          display: none;
+        }
+        .cryptonatorwidget table td {
+          padding: 5px;
+        }
+        .top40 {
+          margin-top: 40px;
+        }
+        .text_box span {
+          background: #fff;
+          border: 1px solid #ccc;
+          box-shadow: inset 0 0 0 5px #f2f2f2;
+        }
+        .text_box span, .text_box span.fill {
+          display: inline-block;
+          border-radius: 50%;
+          height: 90px;
+          width: 90px;
+          text-align: center;
+          line-height: 86px;
+          font-size: 34px;
+          margin-bottom: 15px;
+        }
+        .text_box span i {
+          color: #ff5a24;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader" class="d-flex">
+        <div id="loader" class="mx-auto my-auto">
+            <div class="spinner-grow text-white" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div id="notification-1" class="notification">      
+      <div class="notification-block">
+        <div class="notification-img">
+          <!-- Your image or icon -->
+          <i class="fab fa-btc" aria-hidden="true"></i>
+          <!-- / Your image or icon -->
+        </div>
+        <div class="notification-text-block">
+          <div class="notification-title">
+            <!-- Notification Title -->
+            Earning
+            <!-- / Notification Title -->
+          </div>
+          <div class="notification-text"></div>
+        </div>
+      </div>
+    </div>
+    <div class="f-row">
+        <div class="container">
+            <span class="float-left"></span>
+            <span class="float-right">
+                <a href="{% url 'login' %}" class="btn text-neutral"><span class=""><i class="fas fa-user-alt"></i></span> <span class="ft-text">&nbsp; Login</span></a>
+                <a href="{% url 'register' %}" class="btn btn-orange-sm"><span class=""><i class="fas fa-lock"></i></span><span class="ft-text"> &nbsp; Open account</span></a>
+            </span>
+        </div>
+    </div>
+    <div class="menu-links text-uppercase">
+        <a href="{% url 'index' %}" class="hyperlinks">Home</a>
+        <a href="{% url 'about' %}" class="hyperlinks">About</a>
+        <a href="{% url 'faq' %}" class="hyperlinks">FAQ</a>
+        <a href="{% url 'support' %}" class="hyperlinks">Help Center</a>
+        <a href="{% url 'education' %}" class="hyperlinks">Education</a>
+        {% comment %} <a href="{% url 'news' %}" class="hyperlinks">News</a> {% endcomment %}
+        <a href="{% url 'contact-us' %}" class="hyperlinks">Contact us</a>
+        <div class="">
+            <a href="{% url 'login' %}" class="btn text-neutral"><span class=""><i class="fas fa-user-alt"></i></span>&nbsp; Login</a>
+            <a href="{% url 'register' %}" class="btn btn-orange-sm"><span class=""><i class="fas fa-lock"></i></span>&nbsp; Open account</a>
+        </div>
+    </div>
+    <div class="navb sticky-top">
+        <div class="container">
+            <span class="float-left">
+                <span>
+                    <span><img src="{% static 'images/o.png' %}' " class="logo mt-2" alt="Forex Trade"></span>
+                    <!-- <span class="sitename"><h3>BFXT</h3></span> -->
+                </span>
+            </span>
+            <span class="float-right scroll-links">
+                <a href="{% url 'login' %}" class="btn text-neutral"><span class=""><i class="fas fa-user-alt"></i></span> <span class="ft-text">&nbsp; Login</span></a>
+                <a href="{% url 'register' %}" class="btn btn-orange-sm"><span class=""><i class="fas fa-lock"></i></span><span class="ft-text"> &nbsp; Open account</span></a>
+                <span class="btn lins"><i class="fas fa-bars fa-2x text-light"></i></span>
+            </span>
+            <span class="float-right before-scroll-links">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'index' %}">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'support' %}">Help Center</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'education' %}">Education</a>
+                    </li>
+                    {% comment %} <li class="nav-item">
+                        <a class="nav-link" href="{% url 'news' %}">News</a>
+                    </li> {% endcomment %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact-us' %}">Contact Us</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div><div class="other-banner d-flex">
+    <div class="container mx-auto my-auto ">
+        <h2 class=""><strong>FAQ<br>(Frequently Asked Questions)</strong></h2>
+    </div>
+</div>
+<div class="other-content">
+    <div class="container">
+        <div class="row mt-3 mb-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3">
+                <h6><strong>COMPANY INFORMATION</strong></h6>
+                <div class="accordion" id="faq1">
+                    <div class="card">
+                        <div class="card-header">
+                            <!-- <h2 class="mb-0"> -->
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#f1" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp;Are you a registered company? 
+                            </button>
+                            <!-- </h2> -->
+                        </div>
+                        <div id="f1" class="collapse" data-parent="#faq1">
+                            <div class="card-body">
+                                Yes, Forex Trade is an officially registered, UK-based cloud crypto mining initiative that prides itself on the security of its users
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3">
+                <h6><strong>ACCOUNT INFORMATION</strong></h6>
+                <div class="accordion" id="faq2">
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#g1" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp; How do I make a new account?  
+                            </button>
+                        </div>
+                        <div id="g1" class="collapse" data-parent="#faq2">
+                            <div class="card-body">
+                                <p> Opening a new Forex Trade account is easy. Just follow the directions to sign up, enter your details and quickly form an account with your chosen email and password.
+                                </p>
+                                <p>
+                                    Once you have agreed to Forex Trade terms and conditions, you will receive a confirmation email asking that you verify your email address. If you do not receive a confirmation email, please check your spam folder and adjust your email settings to ensure you don’t miss out on exciting future opportunities reserved for our newsletter recipients.
+                                </p>
+                                <p>
+                                    Once you have followed this, you will have access to your new Forex Trade account section and be able to begin enjoying the profitable world of Forex Trade Mining! 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#g2" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp; How can I erase my account?   
+                            </button>
+                        </div>
+                        <div id="g2" class="collapse" data-parent="#faq2">
+                            <div class="card-body">
+                                <p> In the unfortunate occasion that you wish to end your time with Forex Trade, closing your account could not be easier. Just get in touch with our friendly customer support team and let them know that you wish to terminate your account.
+                                </p>
+                                <p> Please remember that if you terminate your account you will permanently lose your stored details and any funds. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#g3" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp;  How do I unlock my account?    
+                            </button>
+                        </div>
+                        <div id="g3" class="collapse" data-parent="#faq2">
+                            <div class="card-body">
+                                <p> The Forex Trade customer support team reserves the ability to unlock your Forex Trade account for security reasons. If you require this service, simply use the web contact form to submit a ticket to customer support. We will contact you using your Forex Trade account linked email to alert you when your account has been successfully unlocked and is ready for use once more. 
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3 pt-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3">
+                <h6><strong>WALLET INFORMATION</strong></h6>
+                <div class="accordion" id="faq3">
+                    <div class="card">
+                        <div class="card-header">
+                            <!-- <h2 class="mb-0"> -->
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#h1" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-angle-down fa-1x"></i> &nbsp; Is it possible to set up a new wallet?
+                                </button>
+                            <!-- </h2> -->
+                        </div>
+                        <div id="h1" class="collapse" data-parent="#faq3">
+                            <div class="card-body">
+                                <p>
+                                    At current, Forex Trade does not provide a wallet service. We cannot recommend any specific wallet, only suggest you do your own research to discover the wallet that best suits your needs. We do however feature explanations on different types of crypto wallet available as a starting point for your research. Please be aware that it can take up to 48 hours for changes in linked wallets to be recognised by your Forex Trade account.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="card">
+                        <div class="card-header">
+                            <!-- <h2 class="mb-0"> -->
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#h2" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-angle-down fa-1x"></i> &nbsp;  What are the payment methods and limits by which you operate? 
+                                </button>
+                            <!-- </h2> -->
+                        </div>
+                        <div id="h2" class="collapse" data-parent="#faq3">
+                            <div class="card-body">
+                                <p>
+                                    Please find an overall list of our payment methods and limits below.<br>
+                                    Forex Trade accepts payment methods including credit/debit card (Visa, Mastercard) and cryptocurrency (Bitcoin, Bitcoin Cash, Zcash, Litecoin, Dogecoin).
+                                </p> 
+                                <p>
+                                    Card limits:
+                                    <ul>
+                                        <li>5 purchases per day</li>
+                                        <li>10 purchases per week</li>
+                                        <li>10 USD minimum purchase</li>
+                                        <li>6000 USD transaction limit</li>
+                                        <li>25000 USD daily/monthly purchase limit</li>
+                                    </ul>
+                                
+                                <p>
+                                    Crypto limits:
+                                    <ul>
+                                        <li>Unlimited purchases per day</li>
+                                        <li>Unlimited purchases per week</li>
+                                        <li>Unlimited minimum purchase</li>
+                                        <li>Unlimited transaction limit</li>
+                                        <li>Unlimited daily/monthly purchase limit</li>
+                                    </ul>
+                                
+                                <p>
+                                    Please be aware that certain banks charge an additional fee to those purchasing cryptocurrencies or related services. This is called Cash Advance, though it is uncommon. If you are concerned, please contact your bank for further information.
+                                </p>
+                                <p>
+                                    If you wish for further clarification on any of the above information, please do not hesitate to reach out to our friendly customer support for a swift resolution. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3">
+                <h6><strong>RETURNS INFORMATION</strong></h6>
+                <div class="accordion" id="faq4">
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#i1" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp;  Can you tell me the expected returns?   
+                            </button>
+                        </div>
+                        <div id="i1" class="collapse" data-parent="#faq4">
+                            <div class="card-body">
+                                <p>
+                                    We cannot make any concrete statements regarding your contract’s performance due to the flexibility of the crypto mining market.
+                                </p>
+                                <p>
+                                    However, we can provide a general explanation of mining scenarios and their potential avenues, plus provide guidance on generating your own predictions with some level of accuracy.
+                                </p>
+                                <p>
+                                    Please remember that pre-agreed Forex Trade maintenance fees should be factored in when calculating the performance of your mining enterprise.
+                                </p>
+                                <p>
+                                    Please also remember that individual networks and valuators within the crypto market will offer differing valuations and appreciations of network performance regarding the specific cryptocurrencies being mined. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#i2" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp; Can you please explain why my mining output is dropping?   
+                            </button>
+                        </div>
+                        <div id="i2" class="collapse" data-parent="#faq4">
+                            <div class="card-body">
+                                <p> 
+                                    Crypto Mining users recognise the volatility of the crypto markets and understand we have no outright control over the rewards you enjoy. Occasionally they are less than expected, often they are greater than expected. Reasons for the drop in your mining output performance are mostly temporary and with excellent potential to reverse. If you are concerned by your contract’s performance, please contact our customer support for a swift explanation and sound resolution. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#i3" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp;  How frequent is the payment?    
+                            </button>
+                        </div>
+                        <div id="i3" class="collapse" data-parent="#faq4">
+                            <div class="card-body">
+                                <p> Forex Trade contracts are a simple one time only payment. Certain variations of contract will have a maintenance fee that will be deducted from your mining outputs. These will be expressed clearly to you before you agree to any contract. 
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3 pt-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3">
+                <h6><strong>CONTRACTS INFORMATION</strong></h6>
+                <div class="accordion" id="faq4">
+                    <div class="card">
+                        <div class="card-header">
+                            <!-- <h2 class="mb-0"> -->
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#j1" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-angle-down fa-1x"></i> &nbsp;  How do I get started mining? 
+                                </button>
+                            <!-- </h2> -->
+                        </div>
+                        <div id="j1" class="collapse" data-parent="#faq4">
+                            <div class="card-body">
+                                <p>
+                                    simply signup, invest and our professional account manager mine on your behalf.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="card">
+                        <div class="card-header">
+                            <!-- <h2 class="mb-0"> -->
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#j3" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-angle-down fa-1x"></i> &nbsp; My purchase order is expired – why? 
+                                </button>
+                            <!-- </h2> -->
+                        </div>
+                        <div id="j3" class="collapse" data-parent="#faq4">
+                            <div class="card-body">
+                                <p>
+                                For those paying for orders via cryptocurrency, there is a 30-minute window in which cryptocurrencies can be sent to the Crypto Mining wallet. After this length of time, the order window expires.
+                                Simply set up the payment again and send your funds within 30 minutes or contact our customer support to have the order approved manually. 
+                            </p></div>
+                        </div>
+                    </div>  
+                    <div class="card">
+                        <div class="card-header">
+                            <!-- <h2 class="mb-0"> -->
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#j4" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-angle-down fa-1x"></i> &nbsp;    My purchase order is expired – why? 
+                                </button>
+                            <!-- </h2> -->
+                        </div>
+                        <div id="j4" class="collapse" data-parent="#faq4">
+                            <div class="card-body">
+                                <p>
+                                For those paying for orders via cryptocurrency, there is a 30-minute window in which cryptocurrencies can be sent to the Crypto Mining wallet. After this length of time, the order window expires.
+                                Simply set up the payment again and send your funds within 30 minutes or contact our customer support to have the order approved manually. 
+                            </p></div>
+                        </div>
+                    </div>  
+                    <div class="card">
+                        <div class="card-header">
+                            <!-- <h2 class="mb-0"> -->
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#j5" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-angle-down fa-1x"></i> &nbsp;  Can I be refunded? 
+                                </button>
+                            <!-- </h2> -->
+                        </div>
+                        <div id="j5" class="collapse" data-parent="#faq4">
+                            <div class="card-body">
+                                <p>
+                                As clearly stated, all orders are non-refundable. 
+                            </p></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3">
+                <h6><strong>AFFILIATE INFORMATION</strong></h6>
+                <div class="accordion" id="faq5">
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#k1" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp;  Can you explain how the affiliate program works?   
+                            </button>
+                        </div>
+                        <div id="k1" class="collapse" data-parent="#faq5">
+                            <div class="card-body">
+                                <p>
+                                    The Forex Trade affiliate program could not be easier to use or more profitable. It all begins with an affiliate code that is unique to your account. Whenever a user registers and inputs your referral code, they receive 3% discount on whatever purchase they make. And you enjoy a significant hash power boost.
+                                    The more referrals you make, the higher your affiliate rank rises. And the higher your affiliate rank, the bigger hashpower boost you enjoy.
+                                    It’s as simple and as profitable as that. We will be sure to remind you via your linked email whenever your referral code is used. 
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#k2" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp; Can you explain the ranking method?    
+                            </button>
+                        </div>
+                        <div id="k2" class="collapse" data-parent="#faq5">
+                            <div class="card-body">
+                                <p> 
+                                Forex Trade provides a tiered affiliate program that acknowledges the efforts and results of those who contribute to the growth of our platform. The number of referrals you secure correlates directly to the bonuses you enjoy. Why not see how far up the Forex Trade rankings you can climb? With no limit to the rewarding potential of our affiliate program, it’s a great idea!  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#k3" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-angle-down fa-1x"></i> &nbsp;  How good are the affiliate rewards?    
+                            </button>
+                        </div>
+                        <div id="k3" class="collapse" data-parent="#faq5">
+                            <div class="card-body">
+                                <p> Forex Trade is proud to provide industry-leading reward rates to our affiliate users. From the start of your contribution, you will enjoy 5% of the hashpower your referral chooses to purchase.
+                                    So if your referral enters your affiliate code then purchases a 10MH/s contract, you enjoy a totally free 25MH/s. They also receive a discount of 3% on the price. 
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col mb-3">
+
+
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+
+                
+                <h6 class="text-uppercase"><strong>Company</strong></h6>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </div>
+            <div class="col mb-3">
+                <h6 class="text-uppercase"><strong>Features</strong></h6>
+                <li><a href="{% url 'education' %}">Education</a></li>
+                <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'news' %}">News</a></li>
+                <li><a href="{% url 'register' %}">Create an Account</a></li>
+            </div>
+            <div class="col mb-3">
+                <h6 class="text-uppercase"><strong>Help Center</strong></h6>
+                <li><a href="{% url 'faq' %}">FAQ</a></li>
+                <li><a href="{% url 'support' %}">Support</a></li>
+            </div>
+            <div class="col">
+                <h6 class="text-uppercase"><strong>Stay Connected</strong></h6>
+                <p>Stay updated today by subscribing for our newsletters</p>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="email" name="sub-email" class="form-control" placeholder="enter email address" required="">
+                        <button class="btn btn-orange-sm text-uppercase mt-2" type="submit">subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                &copy; 2013 - 2025 Forex Trade ltd •  HQ : Cayman Islands; Mahé, Seychelles
+BRANCH : Georgia Town,KY....... San Francisco, CA            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <span>
+                    <span class="bg-light p-2"><img src="{% static 'images/footer/1.png' %}" class="footer-img" alt=""></span>
+                    <img src="{% static 'images/footer/2.png' %}" class="footer-img" alt="">
+                    <span class="bg-light p-2"><img src="{% static 'images/footer/3.png' %}" class="footer-img" alt=""></span>
+                </span>
+            </div>
+        </div>
+        <div class="lastnote mt-4">
+            <h6><strong>Disclaimer</strong></h6>
+            <p>
+            At Forex Trade, we believe there is no better advertisement than satisfied clients. No wonder that majority of our new clients are affiliates from our existing clients. We are proud that our clients like to recommend our financial service to others. Because of this, we are pleased to offer one of the strongest online affiliate programs in the financial service industry, with a high commission rate, customized tools and reports, and timely commission payout
+            </p>
+            <div>
+                <span>
+                    <strong>We accept: </strong>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/intlTelInput.js' %}"></script>
+    <script src="{% static 'js/utils.js' %}"></script>
+    <script src="{% static 'js/jquery.fake-notification.min.js' %}"></script>
+    <script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+            initialCountry: "auto",
+            geoIpLookup: function(success, failure) {
+            $.get("https://ipinfo.io/", function() {}, "jsonp").always(function(resp) {
+              var countryCode = (resp && resp.country) ? resp.country : "";
+              success(countryCode);      
+            });
+          },
+        });
+    </script>
+    <script>
+        /*  Partners carousel   */
+        /**********************/
+        $('.carousel-client').bxSlider({
+            auto: true,
+            slideWidth: 234,
+            minSlides: 2,
+            maxSlides: 5,
+            controls: false
+        });
+        jQuery('.home-carousel-1').owlCarousel({
+            loop:true,
+            margin:15,
+            nav:false,
+            dots: true,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                480:{
+                    items:1
+                },          
+                
+                767:{
+                    items:1,
+                    margin:50
+                },
+                1000:{
+                    items:2
+                }
+            }
+            
+        });
+        
+        $(document).ready(function(){
+            $(".menu-links").hide();
+            $(".lins").click(function(){
+                $(".menu-links").toggle('slow');
+            });
+
+            if ($(window).width() < 960) {
+                $(".before-scroll-links").hide();
+                $(".scroll-links").show();
+            }
+            else{
+                $(".scroll-links").hide();
+                $(window).scroll(function() {    
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 60) {
+                        //clearHeader, not clearheader - caps H
+                        $(".scroll-links").show();
+                        $(".before-scroll-links").hide();
+                    }
+                    else{
+                        $(".before-scroll-links").show();
+                        $(".scroll-links").hide();
+                    }
+                });
+            }
+            
+        });
+        window.onload = function () {
+            $('#preloader').fadeOut(500, function(){ $('#preloader').remove(); } );
+            startTime();
+        } 
+        $(document).ready(function() {
+          $('#notification-1').Notification({
+            // Notification varibles
+            Varible1: ["Dirk", "Johnny", "Watkin ", "Alejandro",  "Vina",  "Tony",   "Ahmed","Jackson",  "Noah", "Aiden",  "Darren", "Isabella", "Aria", "John", "Greyson", "Peter", "Mohammed", "William",
+            "Lucas", "Amelia", "Mason", "Mathew", "Richard", "Chris", "Mia", "Oliver"],
+            Varible2: ["USA","UAE","ITALY", "FLORIDA",  "MEXICO",  "INDIA",  "CHINA",  "CAMBODIA",  "UNITED KINGDOM",  "GERMANY", "AUSTRALIA",  "BANGLADESH", "SWEDEN", "PAKISTAN", "MALDIVES", "SEYCHELLES", 
+            "BOLIVIA",
+             "SOUTH AFRICA", "ZAMBIA", "ZIMBABWE", "LEBANESE", "SAUDI ARABIA", "CHILE", "PEUTO RICO"],
+            
+            Amount: [9000, 2500,5000,6669,4440,7989,7052],          
+            Content: '[Varible1] from [Varible2] has just Earned <b>$[Amount]</b>',
+            // Timer
+            Show: ['stable', 5, 10],
+            Close: 5,
+            Time: [0, 23],
+            // Notification style 
+            LocationTop: [false, '30%'],
+            LocationBottom:[true, '40%'],
+            LocationRight: [true, '10px'],            
+            LocationLeft:[false, '10px'],
+            Background: '#000000',
+            BorderRadius: 5,
+            BorderWidth: 1,
+            BorderColor: '#73ae20',
+            TextColor: 'white',
+            IconColor: '#ffffff',
+            // Notification Animated   
+            AnimationEffectOpen: 'slideInUp',
+            AnimationEffectClose: 'slideOutDown',
+            // Number of notifications
+            Number: 40,
+            // Notification link
+            Link: [false, 'index-2.html', '_blank']
+          });     
+        });
+    </script>
+<script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=EBqZhysujYxw"></script>
+
+<script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","flag_style":"3d"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+   </body>
+   {%  endblock content %}
+</html>

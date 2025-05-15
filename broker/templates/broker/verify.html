@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load static %}
+{%  block content %}
+<html lang="en" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login | Forex Trade</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="{% static 'css/appsf488f488.css' %}">
+    <!-- System Build v20210628110 @iO -->
+</head>
+
+<body class="nk-body npc-cryptlite pg-auth is-dark">
+    <div class="nk-app-root">
+        <div class="nk-wrap">
+            <div class="nk-block nk-block-middle nk-auth-body wide-xs">
+
+                <div class="brand-logo text-center mb-2 pb-4"><a class="logo-link"
+                        href="index.html"><img class="logo-img logo-light logo-img-lg" src="{% static 'images/-=8691629.png' %} "
+                    alt="Forex Trade"></a></div>
+
+                <div class="card card-bordered">
+                    <div class="card-inner card-inner-lg">
+                        <div class="nk-block-head">
+                            <div class="nk-block-head-content">
+                                <h4 class="nk-block-title text-center">Verification Panel</h4>
+                                <div class="nk-block-des mt-2">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <p class='text-center'>Enter your six (6) digit verification code <i class="ion-disc"></i></p> -->
+ 
+                        <form action="#" method="post">
+                        <div class="form-control-wrap">
+                            <input type="text"  name="token" class="form-control form-control-lg text-center" autocomplete="off" placeholder="Enter verification code: 123456" data-msg-required="Required." required>
+                        </div><br>
+                            <button type='submit' name='submit' class="btn btn-lg btn-primary btn-block">Verify Now</button>
+                        </form>
+                        <div class="form-note-s2 text-center pt-4"> New on our platform? <a
+                                href="{% url 'register' %}"><strong>Create an account</strong></a>
+                        </div>
+                        
+                                  
+    
+          <div id="google_translate_element" align="left"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="../../../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+          
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="nk-footer nk-auth-footer-full">
+                <div class="container wide-lg">
+                    <div class="row g-3">
+                        <div class="col-lg-6 order-lg-last">
+                            <ul class="nav nav-sm justify-content-center justify-content-lg-end">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'index' %}" target="_blank">Return to
+                                        Homepage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'privacy-policy' %}">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="nk-block-content text-center text-lg-left">
+                                <p class="text-soft">Forex Trade &copy; 2013-2023. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="error" style='display: none'></p>
+
+    <script src="{% static 'js/bundle.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/sweetalert.min.js'}"></script>
+<script>
+    var error = document.getElementById('error');
+
+    if (error.textContent == 'empty') {
+         swal("ERROR!", "Input's cannot be empty!", "warning");
+    }else if (error.textContent == "success") {
+        swal("SUCCESS!", "Access Granted", "success");        
+        setTimeout(() => {
+            window.location.href = '../dashboard/index.html'
+        }, 3000);
+    }else if (error.textContent == "error") {
+        swal("ERROR!", "Incorrect E-mail address or Password", "warning");        
+    }
+
+
+
+</script>
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d16694cb-9746-421f-bd87-b0b8157a788f";(function(){d=document;s=d.createElement("script");s.src="../../../client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</body>
+{%  endblock content %}
+</html>

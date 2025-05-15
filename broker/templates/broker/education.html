@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+{% load static %}
+{%  block content %}
+<html lang="en">
+
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency and Forex Investment Platform | Forex Trade</title>
+    <meta name="image" property="og:image" content="{% static 'images/new_3.jpg' %}">
+    <meta name="twitter:image" content="{% static 'images/new_3.jpg' %}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/theme-skin-color-set2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/intlTelInput.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fake-notification-min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'js/jquery.bxslider.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <style>
+        .line-bottom {
+          position: relative;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+        }
+        .line-bottom:after {
+          bottom: -1px;
+          content: "";
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 50px;
+        }
+        .line-bottom-theme-colored2 {
+          position: relative;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+        }
+        .line-bottom-theme-colored2:after {
+          border-radius: 10px;
+          bottom: -1px;
+          content: "";
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 50px;
+        }
+        .line-bottom-rounded-theme-colored2 {
+          position: relative;
+          margin-bottom: 12px;
+          padding-bottom: 4px;
+        }
+        .line-bottom-rounded-theme-colored2:after {
+          border-radius: 15px;
+          bottom: -1px;
+          content: "";
+          height: 4px;
+          border-radius: 6px;
+          left: 0;
+          position: absolute;
+          width: 42px;
+        }
+        .double-line-bottom-theme-colored2 {
+          margin-bottom: 20px;
+          margin-top: 8px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .double-line-bottom-theme-colored2:after {
+          border-radius: 8px;
+          bottom: 1px;
+          content: "";
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 64px;
+        }
+        .double-line-bottom-theme-colored2:before {
+          border-radius: 8px;
+          bottom: -1px;
+          content: "";
+          height: 6px;
+          left: 10px;
+          position: absolute;
+          width: 24px;
+        }
+        .diamond-line-centered-theme-colored2 {
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .diamond-line-centered-theme-colored2:after {
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 90px;
+        }
+        .diamond-line-centered-theme-colored2:before {
+          border: 3px solid #fff;
+          bottom: -5px;
+          content: "";
+          height: 14px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 14px;
+          z-index: 3;
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .diamond-line-centered-theme-white {
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .diamond-line-centered-theme-white:after {
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 90px;
+          background-color: #fff;
+        }
+        .diamond-line-centered-theme-white:before {
+          background-color: #fff;
+          border: 3px solid #fff;
+          bottom: -5px;
+          content: "";
+          height: 14px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 14px;
+          z-index: 3;
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .diamond-line-left-theme-colored2 {
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding-bottom: 5px;
+          position: relative;
+        }
+        .diamond-line-left-theme-colored2:after {
+          bottom: 0;
+          content: "";
+          height: 3px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          width: 90px;
+        }
+        .diamond-line-left-theme-colored2:before {
+          border: 3px solid #fff;
+          bottom: -5px;
+          content: "";
+          height: 14px;
+          left: 15px;
+          position: absolute;
+          right: 0;
+          width: 14px;
+          z-index: 3;
+          -webkit-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .line-bottom-centered {
+          position: relative;
+          margin: 10px 0 35px;
+        }
+        .line-bottom-centered:after {
+          bottom: -13px;
+          content: "";
+          height: 3px;
+          left: 0;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0;
+          position: absolute;
+          right: 0;
+          width: 40px;
+        }
+        .line-bottom-double-line-centered {
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          position: relative;
+        }
+        .line-bottom-double-line-centered::before {
+          bottom: 3px;
+          content: "";
+          height: 1px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 20px;
+        }
+        .line-bottom-double-line-centered::after {
+          bottom: 7px;
+          content: "";
+          height: 1px;
+          left: 0;
+          margin: 0 auto;
+          position: absolute;
+          right: 0;
+          width: 45px;
+        }
+        .cryptonatorwidget {
+          border: none !important;
+          padding: 0 !important;
+        }
+        .cryptonatorwidget input,
+        .cryptonatorwidget select {
+          font-size: 14px !important;
+          text-transform: uppercase;
+          height: 50px !important;
+          padding-left: 10px;
+          border-radius: 16px;
+        }
+        @media (max-width: 499px) {
+          .cryptonatorwidget input,
+          .cryptonatorwidget select {
+            padding-left: 10px;
+          }
+        }
+        .cryptonatorwidget select {
+          padding-right: 40px;
+        }
+        .cryptonatorwidget .select-group {
+          margin-bottom: 0;
+        }
+        .cryptonatorwidget > div:last-child {
+          display: none;
+        }
+        .cryptonatorwidget table td {
+          padding: 5px;
+        }
+        .top40 {
+          margin-top: 40px;
+        }
+        .text_box span {
+          background: #fff;
+          border: 1px solid #ccc;
+          box-shadow: inset 0 0 0 5px #f2f2f2;
+        }
+        .text_box span, .text_box span.fill {
+          display: inline-block;
+          border-radius: 50%;
+          height: 90px;
+          width: 90px;
+          text-align: center;
+          line-height: 86px;
+          font-size: 34px;
+          margin-bottom: 15px;
+        }
+        .text_box span i {
+          color: #ff5a24;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader" class="d-flex">
+        <div id="loader" class="mx-auto my-auto">
+            <div class="spinner-grow text-white" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div id="notification-1" class="notification">      
+      <div class="notification-block">
+        <div class="notification-img">
+          <!-- Your image or icon -->
+          <i class="fab fa-btc" aria-hidden="true"></i>
+          <!-- / Your image or icon -->
+        </div>
+        <div class="notification-text-block">
+          <div class="notification-title">
+            <!-- Notification Title -->
+            Earning
+            <!-- / Notification Title -->
+          </div>
+          <div class="notification-text"></div>
+        </div>
+      </div>
+    </div>
+    <div class="f-row">
+        <div class="container">
+            <span class="float-left"></span>
+            <span class="float-right">
+                <a href="{% url 'login' %}" class="btn text-neutral"><span class=""><i class="fas fa-user-alt"></i></span> <span class="ft-text">&nbsp; Login</span></a>
+                <a href="{% url 'register' %}" class="btn btn-orange-sm"><span class=""><i class="fas fa-lock"></i></span><span class="ft-text"> &nbsp; Open account</span></a>
+            </span>
+        </div>
+    </div>
+    <div class="menu-links text-uppercase">
+        <a href="{% url 'index' %}" class="hyperlinks">Home</a>
+        <a href="{% url 'about' %}" class="hyperlinks">About</a>
+        <a href="{% url 'faq' %}" class="hyperlinks">FAQ</a>
+        <a href="{% url 'support' %}" class="hyperlinks">Help Center</a>
+        <a href="{% url 'education' %}" class="hyperlinks">Education</a>
+        {% comment %} <a href="{% url 'news' %}" class="hyperlinks">News</a> {% endcomment %}
+        <a href="{% url 'contact' %}" class="hyperlinks">Contact us</a>
+        <div class="">
+            <a href="{% url 'login' %}" class="btn text-neutral"><span class=""><i class="fas fa-user-alt"></i></span>&nbsp; Login</a>
+            <a href="{% url 'register' %}" class="btn btn-orange-sm"><span class=""><i class="fas fa-lock"></i></span>&nbsp; Open account</a>
+        </div>
+    </div>
+    <div class="navb sticky-top">
+        <div class="container">
+            <span class="float-left">
+                <span>
+                    <span><img src="{% static 'images/o.png' %}" class="logo mt-2" alt="Forex Trade"></span>
+                    <!-- <span class="sitename"><h3>BFXT</h3></span> -->
+                </span>
+            </span>
+            <span class="float-right scroll-links">
+                <a href="{% url 'login' %}" class="btn text-neutral"><span class=""><i class="fas fa-user-alt"></i></span> <span class="ft-text">&nbsp; Login</span></a>
+                <a href="{% url 'register' %}" class="btn btn-orange-sm"><span class=""><i class="fas fa-lock"></i></span><span class="ft-text"> &nbsp; Open account</span></a>
+                <span class="btn lins"><i class="fas fa-bars fa-2x text-light"></i></span>
+            </span>
+            <span class="float-right before-scroll-links">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'index' %}">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'support' %}">Help Center</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'education' %}">Education</a>
+                    </li>
+                    {% comment %} <li class="nav-item">
+                        <a class="nav-link" href="{% url 'news' %}">News</a>
+                    </li> {% endcomment %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div><div class="other-banner d-flex">
+    <div class="container my-auto mx-auto">
+        <h2><strong>Forex and cryptocurrency Basics<br>(Know more about forex and cryptocurrency investment)</strong></h2>
+    </div>
+</div>
+<div class="other-content">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-1 d-flex">
+                            <span class="mx-auto my-auto"><i class="fas fa-dot-circle text-success"></i></span>
+                        </div>
+                        <div class="col-11">
+                            <h5><strong>What is forex?</strong></h5>
+                            <p>Forex is short for foreign exchange (sometimes abbreviated to just FX) and is the global, decentralized trading market of the world’s currencies. Traders, investors, banks and exchanges buy, sell and speculate on these currencies, and in turn this activity determines the foreign exchange rate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-1 d-flex">
+                            <span class="mx-auto my-auto"><i class="fas fa-dot-circle text-success"></i></span>
+                        </div>
+                        <div class="col-11">
+                            <h5><strong>What are currency pairs?</strong></h5>
+                            <p>Forex is all about speculating on the fluctuating currencies between two countries. These two currencies are referred to as ‘currency pairs’ and they’re made up of the base currency and the quote currency. The most traded currency pair of all is the Euro against the US Dollar, which is normally presented as EUR/USD.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-1 d-flex">
+                            <span class="mx-auto my-auto"><i class="fas fa-dot-circle text-success"></i></span>
+                        </div>
+                        <div class="col-11">
+                            <h5><strong>What’s a quote currency?</strong></h5>
+                            <p>
+                            This is the second currency that appears in the pair, and is also known as the ‘counter currency’. In the example above, the USD is the quote currency.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-1 d-flex">
+                        <span class="mx-auto my-auto"><i class="fas fa-dot-circle text-success"></i></span>
+                    </div>
+                    <div class="col-11">
+                        <h5><strong>How does forex trading work?</strong></h5>
+                        <p>To trade forex is to buy and sell currencies – with the aim of making a profit. Forex trading will always involve two currencies at a time, the base currency and the quote currency. The difference in price is where you’ll make your profit or loss.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-1 d-flex">
+                        <span class="mx-auto my-auto"><i class="fas fa-dot-circle text-success"></i></span>
+                    </div>
+                    <div class="col-11">
+                        <h5><strong>What’s a bid price?</strong></h5>
+                        <p>
+                            This is the price that a trader is willing to buy a currency pair at. It fluctuates constantly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-1 d-flex">
+                        <span class="mx-auto my-auto"><i class="fas fa-dot-circle text-success"></i></span>
+                    </div>
+                    <div class="col-11">
+                        <h5><strong>What is a position?</strong></h5>
+                        <p>A position is a trade which is currently in progress. In trading, you can get long positions and short positions:</p>
+                        <ul>
+                            <li>Long position: this is when the trader has bought a currency with the expectation that it will increase. Once the currency is sold back, the long position is considered closed.</li>
+                            <li> Short position: this is when the trader has sold a currency with the expectation that it will decrease. Once the currency is bought back, the short position is considered closed.</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>    
+        </div>
+        <a href="{% static 'images/forexbasic.html' %}" class="btn btn-green" download="">Know More</a>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col mb-3">
+
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+
+                
+                <h6 class="text-uppercase"><strong>Company</strong></h6>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </div>
+            <div class="col mb-3">
+                <h6 class="text-uppercase"><strong>Features</strong></h6>
+                <li><a href="{% url 'education' %}">Education</a></li>
+                <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'news' %}">News</a></li>
+                <li><a href="{% url 'register' %}">Create an Account</a></li>
+            </div>
+            <div class="col mb-3">
+                <h6 class="text-uppercase"><strong>Help Center</strong></h6>
+                <li><a href="{% url 'faq' %}">FAQ</a></li>
+                <li><a href="{% url 'support' %}">Support</a></li>
+            </div>
+            <div class="col">
+                <h6 class="text-uppercase"><strong>Stay Connected</strong></h6>
+                <p>Stay updated today by subscribing for our newsletters</p>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="email" name="sub-email" class="form-control" placeholder="enter email address" required="">
+                        <button class="btn btn-orange-sm text-uppercase mt-2" type="submit">subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                &copy; 2013 - 2025 Forex Trade ltd •  HQ : Cayman Islands; Mahé, Seychelles
+BRANCH : Georgia Town,KY....... San Francisco, CA            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <span>
+                    <span class="bg-light p-2"><img src="{% static 'images/footer/1.png' %}" class="footer-img" alt=""></span>
+                    <img src="{% static 'images/footer/2.png' %}" class="footer-img" alt="">
+                    <span class="bg-light p-2"><img src="{% static 'images/footer/3.png' %}" class="footer-img" alt=""></span>
+                </span>
+            </div>
+        </div>
+        <div class="lastnote mt-4">
+            <h6><strong>Disclaimer</strong></h6>
+            <p>
+            At Forex Trade, we believe there is no better advertisement than satisfied clients. No wonder that majority of our new clients are affiliates from our existing clients. We are proud that our clients like to recommend our financial service to others. Because of this, we are pleased to offer one of the strongest online affiliate programs in the financial service industry, with a high commission rate, customized tools and reports, and timely commission payout
+            </p>
+            <div>
+                <span>
+                    <strong>We accept: </strong>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-ethereum"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","flag_style":"3d"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/intlTelInput.js' %}"></script>
+    <script src="{% static 'js/utils.js' %}"></script>
+    <script src="{% static 'js/jquery.fake-notification.min.js' %}"></script>
+    <script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+            initialCountry: "auto",
+            geoIpLookup: function(success, failure) {
+            $.get("https://ipinfo.io/", function() {}, "jsonp").always(function(resp) {
+              var countryCode = (resp && resp.country) ? resp.country : "";
+              success(countryCode);      
+            });
+          },
+        });
+    </script>
+    <script>
+        /*  Partners carousel   */
+        /**********************/
+        $('.carousel-client').bxSlider({
+            auto: true,
+            slideWidth: 234,
+            minSlides: 2,
+            maxSlides: 5,
+            controls: false
+        });
+        jQuery('.home-carousel-1').owlCarousel({
+            loop:true,
+            margin:15,
+            nav:false,
+            dots: true,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                480:{
+                    items:1
+                },          
+                
+                767:{
+                    items:1,
+                    margin:50
+                },
+                1000:{
+                    items:2
+                }
+            }
+            
+        });
+        
+        $(document).ready(function(){
+            $(".menu-links").hide();
+            $(".lins").click(function(){
+                $(".menu-links").toggle('slow');
+            });
+
+            if ($(window).width() < 960) {
+                $(".before-scroll-links").hide();
+                $(".scroll-links").show();
+            }
+            else{
+                $(".scroll-links").hide();
+                $(window).scroll(function() {    
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 60) {
+                        //clearHeader, not clearheader - caps H
+                        $(".scroll-links").show();
+                        $(".before-scroll-links").hide();
+                    }
+                    else{
+                        $(".before-scroll-links").show();
+                        $(".scroll-links").hide();
+                    }
+                });
+            }
+            
+        });
+        window.onload = function () {
+            $('#preloader').fadeOut(500, function(){ $('#preloader').remove(); } );
+            startTime();
+        } 
+        $(document).ready(function() {
+          $('#notification-1').Notification({
+            // Notification varibles
+            Varible1: ["Dirk", "Johnny", "Watkin ", "Alejandro",  "Vina",  "Tony",   "Ahmed","Jackson",  "Noah", "Aiden",  "Darren", "Isabella", "Aria", "John", "Greyson", "Peter", "Mohammed", "William",
+            "Lucas", "Amelia", "Mason", "Mathew", "Richard", "Chris", "Mia", "Oliver"],
+            Varible2: ["USA","UAE","ITALY", "FLORIDA",  "MEXICO",  "INDIA",  "CHINA",  "CAMBODIA",  "UNITED KINGDOM",  "GERMANY", "AUSTRALIA",  "BANGLADESH", "SWEDEN", "PAKISTAN", "MALDIVES", "SEYCHELLES", 
+            "BOLIVIA",
+             "SOUTH AFRICA", "ZAMBIA", "ZIMBABWE", "LEBANESE", "SAUDI ARABIA", "CHILE", "PEUTO RICO"],
+            
+            Amount: [9000, 2500,5000,6669,4440,7989,7052],          
+            Content: '[Varible1] from [Varible2] has just Earned <b>$[Amount]</b>',
+            // Timer
+            Show: ['stable', 5, 10],
+            Close: 5,
+            Time: [0, 23],
+            // Notification style 
+            LocationTop: [false, '30%'],
+            LocationBottom:[true, '40%'],
+            LocationRight: [true, '10px'],            
+            LocationLeft:[false, '10px'],
+            Background: '#000000',
+            BorderRadius: 5,
+            BorderWidth: 1,
+            BorderColor: '#73ae20',
+            TextColor: 'white',
+            IconColor: '#ffffff',
+            // Notification Animated   
+            AnimationEffectOpen: 'slideInUp',
+            AnimationEffectClose: 'slideOutDown',
+            // Number of notifications
+            Number: 40,
+            // Notification link
+            Link: [false, 'index-2.html', '_blank']
+          });     
+        });
+    </script>
+
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d16694cb-9746-421f-bd87-b0b8157a788f";(function(){d=document;s=d.createElement("script");s.src="../client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=EBqZhysujYxw"></script>
+
+
+    </body>
+    {%  endblock content %}
+
+</html>

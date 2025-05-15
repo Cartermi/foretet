@@ -1,0 +1,80 @@
+@media(max-width:768px){
+    *{box-sizing: border-box;}
+    body{
+        font-size:12px;
+    }
+    h1{font-size:24px;}h2{font-size:22px;}h3{font-size: 20px;}h4{font-size: 18px;}h5{font-size: 16px;}h6{font-size: 14px;}
+    .f-row{
+        display:none;
+    }
+    .logo{
+        height: 50px;
+    }
+    .navb{
+        height: 50px;
+        line-height: 50px;
+    }
+    .banner{
+        min-height:700px !important;
+        padding-bottom:48px !important;
+    }
+    .other-banner{
+        min-height: 150px;
+        width:100%;
+        padding: 24px 0;
+    }
+    .the-main{
+        display:flex;
+    }
+    .other-banner p{
+        padding: 24px 0 10px 0;
+    }
+    .ft-text{
+        display:none;
+    }
+    .ot{
+        display:none;
+    }
+    .form-c{
+        padding:48px 10px;
+        width:95%;
+        min-height:250px;
+    }
+    .form-container{
+        width: 100%;
+        margin: auto;
+    }
+    .form-reg{
+        background:#fff;
+        border-radius:5px;
+        box-shadow: 1px 1px 3px #888888;
+    }
+    .form-control{
+        border:none;
+        height:35px !important;
+        border-bottom:1px solid #888888;
+    }
+    .other-content{
+        min-height: 150px;
+        width:100%;
+        padding: 24px 0;
+    }
+    .mrk-icon{
+        display:block;
+    }
+    .menu-links{
+        width: 75%;
+        padding-top:50px;
+        top:50px;
+        font-size:15px;
+    }
+    .hyperlinks{
+        line-height: 30px;
+        padding: 5px 1px;
+    }
+    .btn-orange-sm{
+        padding:0 10px;
+        height: 25px;
+    }
+
+}

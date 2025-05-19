@@ -117,16 +117,18 @@ def fund_transfer(request):
 
 @login_required (login_url = "login")
 def kyc_form(request):
-    kyc = request.user.kyc
-    form = KycForm (instance = kyc)
+    kyc, created = Kyc.objects.get_or_create(user=request.user)
 
     if request.method == 'POST':
-        form = KycForm (request.POST, request.FILES, instance = kyc)
-        if form.is_valid ():
-            form.save ()
+        form = KycForm(request.POST, request.FILES, instance=kyc)
+        if form.is_valid():
+            form.save()
+            return redirect('dashboard')
+    else:
+        form = KycForm(instance=kyc)
 
-    context = {'form': form}
-    return render (request, "broker/kyc-form.html", context)
+    return render(request, 'broker/kyc-form.html', {'form': form})
+
 
 @login_required (login_url = "login")
 def kyc(request):
